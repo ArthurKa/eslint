@@ -50,6 +50,7 @@ const backendOnlyRules = {};
 /** @type { import('eslint').Linter.Config } */
 module.exports = {
   env: {
+    es6: true,
     [isFrontend ? 'browser' : 'node']: true,
   },
   settings: {
@@ -61,17 +62,17 @@ module.exports = {
     },
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
     ...isFrontend ? [
       'airbnb',
       'plugin:react/recommended',
     ] : [
       'airbnb/base',
     ],
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
   ],
   plugins: [
     '@typescript-eslint',
@@ -92,10 +93,17 @@ module.exports = {
     ...isFrontend ? frontendOnlyRules : backendOnlyRules,
     'line-comment-position': 'off',
     'no-console': 'off',
-    'no-restricted-syntax': ['warn', {
-      selector: "CallExpression[callee.object.name='console'][callee.property.name!=/^(info|warn|error)$/]",
-      message: 'Unexpected console statement.',
-    }],
+    'no-restricted-syntax': [
+      'warn',
+      {
+        selector: 'CallExpression[callee.object.name="console"][callee.property.name!=/^(info|warn|error)$/]',
+        message: 'Unexpected console statement.',
+      },
+      {
+        selector: 'ImportDeclaration[source.value=/\\.css$/i] ~ ImportDeclaration[source.value!=/\\.css$/i]',
+        message: 'CSS import must be last',
+      },
+    ],
     'import/first': 'off',
     'lines-around-directive': ['warn', {
       before: 'never',
@@ -174,6 +182,13 @@ module.exports = {
     // }],
     'no-unused-vars': 'off',
     'no-sync': 'off',
+    'no-nested-ternary': 'off',
+    'no-implicit-coercion': ['warn', {
+      boolean: true,
+      number: false,
+      string: true,
+      disallowTemplateShorthand: true,
+    }],
   },
   overrides: [
     {
