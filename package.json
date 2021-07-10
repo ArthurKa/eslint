@@ -17,7 +17,7 @@
     "email": "arthur.katruk@gmail.com"
   },
   "license": "ISC",
-  "main": "./index.js",
+  "main": "./src/index.js",
   "bugs": {
     "url": "https://github.com/ArthurKa/eslint/issues"
   },
