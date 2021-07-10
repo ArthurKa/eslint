@@ -2,6 +2,7 @@
 'use strict';
 
 const path = require('path');
+
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(path.resolve('./package.json'));
 
@@ -11,16 +12,13 @@ const dependencies = {
   ...pkg.dependencies,
 };
 
-const isFrontend = (() => {
-  if(dependencies.react) {
-    return true;
-  }
-  if(!dependencies.typescript) {
-    return false;
-  }
-
-  return !dependencies['@types/node'];
-})();
+const isFrontend = (
+  dependencies.react
+    ? true
+    : !dependencies.typescript
+      ? false
+      : !dependencies['@types/node']
+);
 const isReactRichedV17 = (() => {
   const { react } = dependencies;
   const version = react?.match(/\d+/)?.[0];
@@ -43,7 +41,7 @@ const frontendOnlyRules = {
     spacing: { objectLiterals: 'always' },
     children: true,
   }],
-  'react/react-in-jsx-scope': isReactRichedV17 !== false ? 'off' : 'warn',
+  'react/react-in-jsx-scope': isReactRichedV17 === false ? 'warn' : 'off',
 };
 
 /** @type { NonNullable<import('eslint').Linter.Config['rules']> } */
