@@ -176,12 +176,11 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': ['warn', {
           'ts-expect-error': false,
         }],
-        '@typescript-eslint/no-unused-vars': 'warn',
-        // 'no-unused-vars': ['warn', {
-        //   vars: 'all',
-        //   args: 'after-used',
-        //   ignoreRestSiblings: true,
-        // }],
+        '@typescript-eslint/no-unused-vars': ['warn', {
+          vars: 'all',
+          args: 'after-used',
+          ignoreRestSiblings: true,
+        }],
         'no-unused-vars': 'off',
         'no-sync': 'off',
         'no-nested-ternary': 'off',
