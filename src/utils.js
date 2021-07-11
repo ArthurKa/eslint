@@ -192,6 +192,7 @@ module.exports = {
           disallowTemplateShorthand: true,
         }],
         'no-mixed-operators': 'off',
+        camelcase: 'off',
       },
       overrides: [
         {
