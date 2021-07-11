@@ -192,6 +192,7 @@ module.exports = {
         }],
         'no-mixed-operators': 'off',
         camelcase: 'off',
+        'no-underscore-dangle': 'off',
       },
       overrides: [
         {
