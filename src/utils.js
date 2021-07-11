@@ -191,6 +191,7 @@ module.exports = {
           string: true,
           disallowTemplateShorthand: true,
         }],
+        'no-mixed-operators': 'off',
       },
       overrides: [
         {
