@@ -204,6 +204,7 @@ module.exports = {
           after: false,
         }],
         'prefer-destructuring': 'off',
+        'jsx-quotes': ['warn', 'prefer-single'],
       },
       overrides: [
         {
