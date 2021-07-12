@@ -188,7 +188,12 @@ module.exports = {
           boolean: true,
           number: false,
           string: true,
-          disallowTemplateShorthand: true,
+          /*
+            Because of error for some reason:
+            Configuration for rule "no-implicit-coercion" is invalid:
+            Value {"boolean":true,"number":false,"string":true,"disallowTemplateShorthand":true} should NOT have additional properties.
+          */
+          // disallowTemplateShorthand: true,
         }],
         'no-mixed-operators': 'off',
         camelcase: 'off',
