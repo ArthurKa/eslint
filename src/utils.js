@@ -198,6 +198,7 @@ module.exports = {
         }],
         'newline-per-chained-call': 'off',
         'consistent-return': 'off',
+        'function-paren-newline': 'off',
       },
       overrides: [
         {
