@@ -205,6 +205,7 @@ module.exports = {
         }],
         'prefer-destructuring': 'off',
         'jsx-quotes': ['warn', 'prefer-single'],
+        'react/jsx-props-no-spreading': 'off',
       },
       overrides: [
         {
