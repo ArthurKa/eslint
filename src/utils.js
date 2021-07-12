@@ -196,6 +196,7 @@ module.exports = {
         'no-empty': ['warn', {
           allowEmptyCatch: true,
         }],
+        'newline-per-chained-call': 'off',
       },
       overrides: [
         {
