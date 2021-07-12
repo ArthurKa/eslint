@@ -203,6 +203,7 @@ module.exports = {
           before: false,
           after: false,
         }],
+        'prefer-destructuring': 'off',
       },
       overrides: [
         {
