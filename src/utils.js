@@ -199,6 +199,10 @@ module.exports = {
         'newline-per-chained-call': 'off',
         'consistent-return': 'off',
         'function-paren-newline': 'off',
+        'generator-star-spacing': ['warn', {
+          before: false,
+          after: false,
+        }],
       },
       overrides: [
         {
