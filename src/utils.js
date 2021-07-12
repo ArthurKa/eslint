@@ -197,6 +197,7 @@ module.exports = {
           allowEmptyCatch: true,
         }],
         'newline-per-chained-call': 'off',
+        'consistent-return': 'off',
       },
       overrides: [
         {
