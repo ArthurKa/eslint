@@ -193,6 +193,9 @@ module.exports = {
         'no-mixed-operators': 'off',
         camelcase: 'off',
         'no-underscore-dangle': 'off',
+        'no-empty': ['warn', {
+          allowEmptyCatch: true,
+        }],
       },
       overrides: [
         {
