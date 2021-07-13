@@ -211,9 +211,7 @@ module.exports = {
         'prefer-destructuring': 'off',
         'jsx-quotes': ['warn', 'prefer-single'],
         'react/jsx-props-no-spreading': 'off',
-        'no-void': ['error', {
-          allowAsStatement: true,
-        }],
+        'no-void': 'off',
       },
       overrides: [
         {
