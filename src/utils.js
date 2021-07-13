@@ -103,7 +103,7 @@ module.exports = {
           },
           {
             selector: 'ImportDeclaration[source.value=/\\.css$/i] ~ ImportDeclaration[source.value!=/\\.css$/i]',
-            message: 'CSS import must be last',
+            message: 'CSS import must be the last.',
           },
         ],
         'import/first': 'off',
