@@ -213,6 +213,7 @@ module.exports = {
         'react/jsx-props-no-spreading': 'off',
         'no-void': 'off',
         'brace-style': ['warn', '1tbs'],
+        curly: ['warn', 'all'],
       },
       overrides: [
         {
