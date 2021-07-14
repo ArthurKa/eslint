@@ -214,6 +214,7 @@ module.exports = {
         'no-void': 'off',
         'brace-style': ['warn', '1tbs'],
         curly: ['warn', 'all'],
+        indent: 'off',
       },
       overrides: [
         {
