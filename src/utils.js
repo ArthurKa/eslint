@@ -215,6 +215,7 @@ module.exports = {
         'brace-style': ['warn', '1tbs'],
         curly: ['warn', 'all'],
         indent: 'off',
+        '@typescript-eslint/indent': ['warn', 2],
       },
       overrides: [
         {
