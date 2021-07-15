@@ -219,9 +219,14 @@ module.exports = {
       },
       overrides: [
         {
-          files: ['*.js', '*.jsx'],
+          files: ['*.js', '*.jsx', '*.cjs'],
           rules: {
             strict: ['warn', 'global'],
+          },
+        },
+        {
+          files: ['*.js', '*.jsx'],
+          rules: {
             '@typescript-eslint/no-var-requires': 'off',
           },
         },
