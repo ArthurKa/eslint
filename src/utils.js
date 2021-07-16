@@ -216,6 +216,7 @@ module.exports = {
         curly: ['warn', 'all'],
         indent: 'off',
         '@typescript-eslint/indent': ['warn', 2],
+        'no-extra-parens': ['warn', 'all'],
       },
       overrides: [
         {
