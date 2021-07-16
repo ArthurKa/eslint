@@ -217,6 +217,9 @@ module.exports = {
         indent: 'off',
         '@typescript-eslint/indent': ['warn', 2],
         'no-extra-parens': ['warn', 'all'],
+        'max-statements-per-line': ['warn', {
+          max: 1,
+        }],
       },
       overrides: [
         {
