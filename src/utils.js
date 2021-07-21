@@ -220,6 +220,7 @@ module.exports = {
         'max-statements-per-line': ['warn', {
           max: 1,
         }],
+        'require-await': 'warn',
       },
       overrides: [
         {
