@@ -222,6 +222,7 @@ module.exports = {
         }],
         'require-await': 'warn',
         '@typescript-eslint/type-annotation-spacing': 'warn',
+        '@typescript-eslint/member-delimiter-style': 'warn',
       },
       overrides: [
         {
