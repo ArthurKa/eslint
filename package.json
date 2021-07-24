@@ -2,7 +2,7 @@
   "name": "@arthurka/eslint",
   "version": "1.20.0",
   "scripts": {
-    "pu": "npm pu && git push && git push --tags"
+    "pu": "git bcm && npm pu && git push && git push --tags"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.2",
