@@ -221,6 +221,7 @@ module.exports = {
           max: 1,
         }],
         'require-await': 'warn',
+        '@typescript-eslint/type-annotation-spacing': 'warn',
       },
       overrides: [
         {
