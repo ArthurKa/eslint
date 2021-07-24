@@ -3,6 +3,7 @@
 
 const { checkIfReactRichedV17, makeConfig, dependencies } = require('./utils');
 
+// eslint-disable-next-line no-extra-parens
 const isFrontend = (
   dependencies.react
     ? true
