@@ -224,6 +224,7 @@ module.exports = {
         '@typescript-eslint/type-annotation-spacing': 'warn',
         '@typescript-eslint/member-delimiter-style': 'warn',
         'no-useless-constructor': 'off',
+        'lines-between-class-members': 'off',
       },
       overrides: [
         {
