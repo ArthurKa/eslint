@@ -204,10 +204,7 @@ module.exports = {
         'newline-per-chained-call': 'off',
         'consistent-return': 'off',
         'function-paren-newline': 'off',
-        'generator-star-spacing': ['warn', {
-          before: false,
-          after: false,
-        }],
+        'generator-star-spacing': ['warn', 'before'],
         'prefer-destructuring': 'off',
         'jsx-quotes': ['warn', 'prefer-single'],
         'react/jsx-props-no-spreading': 'off',
