@@ -1,10 +1,8 @@
 // @ts-check
 'use strict';
 
-const path = require('path');
-
 // eslint-disable-next-line import/no-dynamic-require
-const pkg = require(path.resolve('./package.json'));
+const pkg = require(require('path').resolve('./package.json'));
 
 /** @type {{ react?: string; typescript?: string; '@types/node'?: string; }} */
 const dependencies = {
