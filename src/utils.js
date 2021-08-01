@@ -223,6 +223,7 @@ module.exports = {
         '@typescript-eslint/type-annotation-spacing': 'warn',
         '@typescript-eslint/member-delimiter-style': 'warn',
         'no-useless-constructor': 'off',
+        '@typescript-eslint/no-useless-constructor': 'warn',
         'lines-between-class-members': 'off',
         'babel/semi': 'warn',
       },
