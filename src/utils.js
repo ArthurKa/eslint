@@ -78,6 +78,7 @@ module.exports = {
       ],
       plugins: [
         '@typescript-eslint',
+        'babel',
         ...isFrontend ? ['react'] : [],
       ],
       parserOptions: {
@@ -223,6 +224,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': 'warn',
         'no-useless-constructor': 'off',
         'lines-between-class-members': 'off',
+        'babel/semi': 'warn',
       },
       overrides: [
         {
