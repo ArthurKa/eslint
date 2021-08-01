@@ -16,6 +16,10 @@
     "eslint-plugin-react": "^7.24.0",
     "typescript": "^4.3.5"
   },
+  "devDependencies": {
+    "@types/eslint": "^7.28.0",
+    "@types/node": "^16.4.10"
+  },
   "author": {
     "name": "ArthurKa",
     "email": "arthur.katruk@gmail.com"
