@@ -224,6 +224,8 @@ module.exports = {
         'lines-between-class-members': 'off',
         'object-curly-spacing': 'off',
         '@typescript-eslint/object-curly-spacing': ['warn', 'always'],
+        semi: 'off',
+        '@typescript-eslint/semi': 'warn',
       },
       overrides: [
         {
