@@ -76,7 +76,6 @@ module.exports = {
       ],
       plugins: [
         '@typescript-eslint',
-        'babel',
         ...isFrontend ? ['react'] : [],
       ],
       parserOptions: {
@@ -223,7 +222,6 @@ module.exports = {
         'no-useless-constructor': 'off',
         '@typescript-eslint/no-useless-constructor': 'warn',
         'lines-between-class-members': 'off',
-        'babel/semi': 'warn',
         'object-curly-spacing': 'off',
         '@typescript-eslint/object-curly-spacing': ['warn', 'always'],
       },
