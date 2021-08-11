@@ -1,6 +1,6 @@
 {
   "name": "@arthurka/eslint",
-  "version": "1.29.0",
+  "version": "1.30.0",
   "scripts": {
     "pu": "git bcm && npm pu && git p && git pt"
   },
