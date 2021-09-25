@@ -226,6 +226,9 @@ module.exports = {
         '@typescript-eslint/object-curly-spacing': ['warn', 'always'],
         semi: 'off',
         '@typescript-eslint/semi': 'warn',
+        'no-constant-condition': ['warn', {
+          checkLoops: false,
+        }],
       },
       overrides: [
         {
