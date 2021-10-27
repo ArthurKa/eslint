@@ -124,6 +124,7 @@ module.exports = {
             for: { after: false },
             while: { after: false },
             switch: { after: false },
+            catch: { after: false },
           },
         }],
         'no-process-env': 'off',
