@@ -14,6 +14,6 @@ const isFrontend = (
 const isReactRichedV17 = checkIfReactRichedV17();
 
 const workspace = isFrontend ? 'frontend' : 'backend';
-console.info(`${pkgName}: detect ${workspace} workspace. Apply ${workspace} linter config.`);
+console.info(`${pkgName}: ${workspace} workspace has been detected. Apply ${workspace} linter config.`);
 
 module.exports = makeConfig(isFrontend, isReactRichedV17);
