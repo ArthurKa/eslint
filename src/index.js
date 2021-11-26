@@ -1,15 +1,15 @@
 // @ts-check
 'use strict';
 
-const { checkIfReactRichedV17, makeConfig, dependencies } = require('./utils');
+const { checkIfReactRichedV17, makeConfig, allDependencies } = require('./utils');
 
 // eslint-disable-next-line no-extra-parens
 const isFrontend = (
-  dependencies.react
+  allDependencies.react
     ? true
-    : !dependencies.typescript
+    : !allDependencies.typescript
       ? false
-      : !dependencies['@types/node']
+      : !allDependencies['@types/node']
 );
 const isReactRichedV17 = checkIfReactRichedV17();
 

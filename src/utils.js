@@ -5,7 +5,7 @@
 const pkg = require(require('path').resolve('./package.json'));
 
 /** @type {{ react?: string; typescript?: string; '@types/node'?: string; }} */
-const dependencies = {
+const allDependencies = {
   ...pkg.devDependencies,
   ...pkg.dependencies,
 };
@@ -16,10 +16,10 @@ const dependencies = {
  */
 
 module.exports = {
-  dependencies,
+  allDependencies,
 
   checkIfReactRichedV17() {
-    const { react } = dependencies;
+    const { react } = allDependencies;
     const version = react?.match(/\d+/)?.[0];
 
     if(react === undefined || version === undefined) {
