@@ -1,6 +1,7 @@
 {
   "name": "@arthurka/eslint",
   "version": "1.32.0",
+  "main": "./src/index.js",
   "scripts": {
     "pu": "git bcm && npm pu && git p && git pt"
   },
@@ -24,7 +25,6 @@
     "email": "arthur.katruk@gmail.com"
   },
   "license": "ISC",
-  "main": "./src/index.js",
   "bugs": {
     "url": "https://github.com/ArthurKa/eslint/issues"
   },
