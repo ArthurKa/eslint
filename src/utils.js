@@ -2,24 +2,28 @@
 'use strict';
 
 /** @typedef {{ react?: string; typescript?: string; '@types/node'?: string; }} Dependencies */
+/** @typedef {{ name: string; dependencies: Dependencies; devDependencies: Dependencies }} Package */
 
-/** @type {{ name: string; dependencies: Dependencies; devDependencies: Dependencies }} */
+/** @type { Package } */
 // eslint-disable-next-line import/no-dynamic-require
-const pkg = require(require('path').resolve('./package.json'));
+const parentPkg = require(require('path').resolve('./package.json'));
+
+/** @type { Package } */
+// @ts-expect-error
+// eslint-disable-next-line import/extensions, import/no-unresolved
+const pkg = require('./package.json');
 
 const allDependencies = {
-  ...pkg.devDependencies,
-  ...pkg.dependencies,
+  ...parentPkg.devDependencies,
+  ...parentPkg.dependencies,
 };
 
-/**
- * @typedef Config
- * @type { import('eslint').Linter.Config }
- */
+/** @typedef { import('eslint').Linter.Config } Config */
 
 module.exports = {
   allDependencies,
   pkgName: pkg.name,
+  parentPkgName: parentPkg.name,
 
   checkIfReactRichedV17() {
     const { react } = allDependencies;
