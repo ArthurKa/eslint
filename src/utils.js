@@ -19,9 +19,11 @@ const allDependencies = {
 
 /** @typedef { import('eslint').Linter.Config } Config */
 
+const pkgName = pkg.name;
+
 module.exports = {
   allDependencies,
-  pkgName: pkg.name,
+  pkgName,
   parentPkgName: parentPkg.name,
 
   checkIfReactRichedV17() {
@@ -252,5 +254,10 @@ module.exports = {
         },
       ],
     };
+  },
+
+  /** @type { (message: string) => void } */
+  printInfoMessage: message => {
+    console.info(`${pkgName}: ${message.slice(0, 1).toLowerCase()}${message.slice(1)}`);
   },
 };

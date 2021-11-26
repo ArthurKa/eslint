@@ -1,7 +1,7 @@
 // @ts-check
 'use strict';
 
-const { checkIfReactRichedV17, makeConfig, allDependencies, pkgName } = require('./utils');
+const { checkIfReactRichedV17, makeConfig, allDependencies, printInfoMessage } = require('./utils');
 
 // eslint-disable-next-line no-extra-parens
 const isFrontend = (
@@ -14,6 +14,6 @@ const isFrontend = (
 const isReactRichedV17 = checkIfReactRichedV17();
 
 const workspace = isFrontend ? 'frontend' : 'backend';
-console.info(`${pkgName}: ${workspace} workspace has been detected. Apply ${workspace} linter config.`);
+printInfoMessage(`${workspace} workspace has been detected. Apply ${workspace} linter config.`);
 
 module.exports = makeConfig(isFrontend, isReactRichedV17);
