@@ -9,9 +9,8 @@
 const parentPkg = require(require('path').resolve('./package.json'));
 
 /** @type { Package } */
-// @ts-expect-error
 // eslint-disable-next-line import/extensions, import/no-unresolved
-const pkg = require('./package.json');
+const pkg = require('../package.json');
 
 const allDependencies = {
   ...parentPkg.devDependencies,
