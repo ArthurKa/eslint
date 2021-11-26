@@ -1,10 +1,12 @@
 // @ts-check
 'use strict';
 
+/** @typedef {{ react?: string; typescript?: string; '@types/node'?: string; }} Dependencies */
+
+/** @type {{ name: string; dependencies: Dependencies; devDependencies: Dependencies }} */
 // eslint-disable-next-line import/no-dynamic-require
 const pkg = require(require('path').resolve('./package.json'));
 
-/** @type {{ react?: string; typescript?: string; '@types/node'?: string; }} */
 const allDependencies = {
   ...pkg.devDependencies,
   ...pkg.dependencies,
@@ -17,6 +19,7 @@ const allDependencies = {
 
 module.exports = {
   allDependencies,
+  pkgName: pkg.name,
 
   checkIfReactRichedV17() {
     const { react } = allDependencies;
