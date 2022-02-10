@@ -238,6 +238,9 @@ module.exports = {
         'no-constant-condition': ['warn', {
           checkLoops: false,
         }],
+        'prefer-regex-literals': ['warn', {
+          disallowRedundantWrapping: true,
+        }],
       },
       overrides: [
         {
