@@ -1,16 +1,28 @@
 // @ts-check
 'use strict';
 
-/** @typedef {{ react?: string; typescript?: string; '@types/node'?: string; }} Dependencies */
-/** @typedef {{ name: string; dependencies: Dependencies; devDependencies: Dependencies }} Package */
+/**
+  @typedef Dependencies
+  @type {{
+    react?: string;
+    typescript?: string;
+    '@types/node'?: string;
+  }}
+*/
+/**
+  @typedef Package
+  @type {{
+    name: string;
+    dependencies: Dependencies;
+    devDependencies: Dependencies;
+  }}
+*/
 
-/** @type { Package } */
+/** @type {Package} */
 // eslint-disable-next-line import/no-dynamic-require
 const parentPkg = require(require('path').resolve('./package.json'));
 
-/** @type { Package } */
-// eslint-disable-next-line import/extensions, import/no-unresolved
-const pkg = require('../package.json');
+const { name: pkgName } = require('../package.json');
 
 const allDependencies = {
   ...parentPkg.devDependencies,
@@ -18,8 +30,6 @@ const allDependencies = {
 };
 
 /** @typedef { import('eslint').Linter.Config } Config */
-
-const pkgName = pkg.name;
 
 module.exports = {
   allDependencies,
@@ -37,9 +47,9 @@ module.exports = {
     return +version >= 17;
   },
 
-  /** @type { (isFrontend: boolean, isReactRichedV17?: boolean) => Config } */
+  /** @type {(isFrontend: boolean, isReactRichedV17?: boolean) => Config} */
   makeConfig(isFrontend, isReactRichedV17) {
-    /** @type { NonNullable<Config['rules']> } */
+    /** @type {NonNullable<Config['rules']>} */
     const frontendOnlyRules = {
       'react/jsx-filename-extension': ['warn', {
         extensions: ['.jsx', '.tsx'],
@@ -53,7 +63,7 @@ module.exports = {
       'react/react-in-jsx-scope': isReactRichedV17 === false ? 'warn' : 'off',
     };
 
-    /** @type { NonNullable<Config['rules']> } */
+    /** @type {NonNullable<Config['rules']>} */
     const backendOnlyRules = {};
 
     return {
@@ -261,7 +271,7 @@ module.exports = {
     };
   },
 
-  /** @type { (message: string) => void } */
+  /** @type {(message: string) => void} */
   printInfoMessage: message => {
     console.info(`${pkgName}: ${message.slice(0, 1).toLowerCase()}${message.slice(1)}`);
   },
