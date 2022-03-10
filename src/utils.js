@@ -172,7 +172,9 @@ module.exports = {
           maxBOF: 0,
           maxEOF: 0,
         }],
-        'import/extensions': ['warn', 'never'],
+        'import/extensions': ['error', 'never', {
+          json: 'ignorePackages',
+        }],
         'no-plusplus': 'off',
         'import/prefer-default-export': 'off',
         'no-use-before-define': 'off',
