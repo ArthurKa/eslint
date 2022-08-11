@@ -231,8 +231,66 @@ module.exports = {
         'no-void': 'off',
         'brace-style': ['warn', '1tbs'],
         curly: ['warn', 'all'],
-        indent: 'off',
-        '@typescript-eslint/indent': ['warn', 2],
+        indent: ['warn', 2, {
+          SwitchCase: 1,
+          ignoredNodes: [
+            /**
+              @example
+              `
+                .asd {
+                  ${ {
+                    asd: 123,
+                  } }
+                }
+              `;
+            */
+            'TemplateLiteral [expressions.length!=0]',
+          ],
+        }],
+        '@typescript-eslint/indent': ['warn', 2, {
+          SwitchCase: 1,
+          ignoredNodes: [
+            /**
+              @example
+              type A = Promise<
+                number
+              >;
+            */
+            'TSTypeParameterInstantiation *',
+
+            /**
+              @example
+              []
+                .reduce<number>(
+                  ( a, b ) => a + b,
+                  0,
+                );
+            */
+            'CallExpression > TSTypeParameterInstantiation',
+
+            /**
+              @example
+              function asd(): (
+                null
+              ) {
+                return null;
+              }
+            */
+            'FunctionDeclaration > * > [typeAnnotation]',
+
+            /**
+              @example
+              `
+                .asd {
+                  ${ {
+                    asd: 123,
+                  } }
+                }
+              `;
+            */
+            'TemplateLiteral [expressions.length!=0]',
+          ],
+        }],
         'no-extra-parens': 'off',
         '@typescript-eslint/no-extra-parens': 'off',
         'max-statements-per-line': ['warn', {
