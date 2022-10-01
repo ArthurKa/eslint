@@ -312,6 +312,18 @@ module.exports = {
         'prefer-regex-literals': ['warn', {
           disallowRedundantWrapping: true,
         }],
+        'sort-imports': ['warn', {
+          ignoreCase: true,
+          ignoreDeclarationSort: true,
+          ignoreMemberSort: false,
+          allowSeparatedGroups: true,
+          memberSyntaxSortOrder: [
+            'single',
+            'all',
+            'multiple',
+            'none',
+          ],
+        }],
       },
       overrides: [
         {
