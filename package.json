@@ -1,14 +1,14 @@
 {
   "name": "@arthurka/eslint",
-  "version": "1.42.0",
+  "version": "2.0.0",
   "main": "./src/index.js",
   "scripts": {
     "pu": "git bcm && npm pu && git p && git pt"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
-    "@typescript-eslint/parser": "^4.28.2",
-    "eslint": "^7.30.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.23.4",
