@@ -244,7 +244,7 @@ module.exports = {
                 }
               `;
             */
-            'TemplateLiteral [expressions.length!=0]',
+            'TemplateLiteral > ObjectExpression',
           ],
         }],
         '@typescript-eslint/indent': ['warn', 2, {
@@ -288,7 +288,7 @@ module.exports = {
                 }
               `;
             */
-            'TemplateLiteral [expressions.length!=0]',
+            'TemplateLiteral > ObjectExpression',
           ],
         }],
         'no-extra-parens': 'off',
@@ -324,6 +324,7 @@ module.exports = {
             'none',
           ],
         }],
+        'prefer-template': 'warn',
       },
       overrides: [
         {
