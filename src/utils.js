@@ -331,6 +331,7 @@ module.exports = {
         'max-classes-per-file': 'off',
         '@typescript-eslint/no-empty-interface': 'off',
         'key-spacing': 'warn',
+        'comma-spacing': 'warn',
       },
       overrides: [
         {
