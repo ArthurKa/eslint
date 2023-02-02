@@ -113,13 +113,11 @@ module.exports = {
       rules: {
         ...isFrontend ? frontendOnlyRules : backendOnlyRules,
         'line-comment-position': 'off',
-        'no-console': 'off',
+        'no-console': ['warn', {
+          allow: ['warn', 'error', 'info'],
+        }],
         'no-restricted-syntax': [
           'warn',
-          {
-            selector: 'CallExpression[callee.object.name="console"][callee.property.name!=/^(info|warn|error)$/]',
-            message: 'Unexpected console statement.',
-          },
           {
             selector: 'ImportDeclaration[source.value=/\\.css$/i] ~ ImportDeclaration[source.value!=/\\.css$/i]',
             message: 'CSS import must be the last.',
@@ -327,6 +325,11 @@ module.exports = {
           ],
         }],
         'prefer-template': 'warn',
+        'prefer-const': 'warn',
+        'spaced-comment': 'warn',
+        'no-multi-spaces': 'warn',
+        'max-classes-per-file': 'off',
+        '@typescript-eslint/no-empty-interface': 'off',
       },
       overrides: [
         {
