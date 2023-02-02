@@ -92,10 +92,12 @@ module.exports = {
         'plugin:import/warnings',
         'plugin:import/typescript',
         'plugin:react-hooks/recommended',
+        'plugin:arthurka/recommended',
       ],
       plugins: [
         '@typescript-eslint',
         ...isFrontend ? ['react'] : [],
+        'arthurka',
       ],
       parserOptions: {
         sourceType: 'script',
