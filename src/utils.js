@@ -330,6 +330,7 @@ module.exports = {
         'no-multi-spaces': 'warn',
         'max-classes-per-file': 'off',
         '@typescript-eslint/no-empty-interface': 'off',
+        'key-spacing': 'warn',
       },
       overrides: [
         {
