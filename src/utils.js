@@ -333,6 +333,8 @@ module.exports = {
         'key-spacing': 'warn',
         'comma-spacing': 'warn',
         'array-bracket-spacing': 'warn',
+        'no-return-await': 'off',
+        '@typescript-eslint/return-await': 'warn',
       },
       overrides: [
         {
