@@ -337,6 +337,7 @@ module.exports = {
         '@typescript-eslint/return-await': 'warn',
         'space-infix-ops': 'off',
         '@typescript-eslint/space-infix-ops': 'warn',
+        'eol-last': 'warn',
       },
       overrides: [
         {
