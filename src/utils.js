@@ -335,6 +335,8 @@ module.exports = {
         'array-bracket-spacing': 'warn',
         'no-return-await': 'off',
         '@typescript-eslint/return-await': 'warn',
+        'space-infix-ops': 'off',
+        '@typescript-eslint/space-infix-ops': 'warn',
       },
       overrides: [
         {
