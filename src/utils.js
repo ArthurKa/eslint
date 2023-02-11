@@ -332,6 +332,7 @@ module.exports = {
         '@typescript-eslint/no-empty-interface': 'off',
         'key-spacing': 'warn',
         'comma-spacing': 'warn',
+        'array-bracket-spacing': 'warn',
       },
       overrides: [
         {
