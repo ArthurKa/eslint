@@ -338,6 +338,7 @@ module.exports = {
         '@typescript-eslint/space-infix-ops': 'warn',
         'eol-last': 'warn',
         'no-trailing-spaces': 'warn',
+        'new-parens': 'warn',
       },
       overrides: [
         {
