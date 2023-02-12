@@ -339,6 +339,7 @@ module.exports = {
         'eol-last': 'warn',
         'no-trailing-spaces': 'warn',
         'new-parens': 'warn',
+        'new-cap': 'warn',
       },
       overrides: [
         {
