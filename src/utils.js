@@ -151,7 +151,7 @@ module.exports = {
         'react/jsx-pascal-case': 'off',
         'no-negated-condition': 'off',
         'default-case': 'off',
-        'react/jsx-key': 'off',
+        'react/jsx-key': 'warn',
         'jsx-a11y/label-has-associated-control': 'off',
         'react/require-default-props': 'off',
         'func-names': 'off',
