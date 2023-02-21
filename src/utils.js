@@ -340,6 +340,7 @@ module.exports = {
         'no-trailing-spaces': 'warn',
         'new-parens': 'warn',
         'new-cap': 'warn',
+        '@typescript-eslint/ban-types': 'warn',
       },
       overrides: [
         {
