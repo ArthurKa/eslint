@@ -346,6 +346,7 @@ module.exports = {
         'comma-dangle': 'warn',
         'padded-blocks': 'warn',
         'no-param-reassign': 'warn',
+        'react/prop-types': 'off',
       },
       overrides: [
         {
