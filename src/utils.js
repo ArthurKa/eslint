@@ -348,7 +348,8 @@ module.exports = {
         'padded-blocks': 'warn',
         'no-param-reassign': 'warn',
         'react/prop-types': 'off',
-        'react/jsx-indent': 'warn',
+        // Error: Definition for rule was not found.
+        // 'react/jsx-indent': 'warn',
         'react/no-array-index-key': 'off',
       },
       overrides: [
