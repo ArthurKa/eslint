@@ -342,6 +342,7 @@ module.exports = {
         'new-cap': 'warn',
         '@typescript-eslint/ban-types': 'warn',
         'semi-spacing': 'warn',
+        'import/newline-after-import': 'warn',
       },
       overrides: [
         {
