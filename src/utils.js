@@ -347,6 +347,7 @@ module.exports = {
         'padded-blocks': 'warn',
         'no-param-reassign': 'warn',
         'react/prop-types': 'off',
+        'react/jsx-indent': 'warn',
       },
       overrides: [
         {
