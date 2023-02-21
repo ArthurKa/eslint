@@ -344,6 +344,7 @@ module.exports = {
         'semi-spacing': 'warn',
         'import/newline-after-import': 'warn',
         'comma-dangle': 'warn',
+        'padded-blocks': 'warn',
       },
       overrides: [
         {
