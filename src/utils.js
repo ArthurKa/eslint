@@ -151,7 +151,8 @@ module.exports = {
         'react/jsx-pascal-case': 'off',
         'no-negated-condition': 'off',
         'default-case': 'off',
-        'react/jsx-key': 'warn',
+        // Error: Definition for rule was not found.
+        'react/jsx-key': 'off',
         'jsx-a11y/label-has-associated-control': 'off',
         'react/require-default-props': 'off',
         'func-names': 'off',
