@@ -351,6 +351,7 @@ module.exports = {
         // Error: Definition for rule was not found.
         // 'react/jsx-indent': 'warn',
         'react/no-array-index-key': 'off',
+        'arrow-body-style': 'warn',
       },
       overrides: [
         {
