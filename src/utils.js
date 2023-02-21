@@ -345,6 +345,7 @@ module.exports = {
         'import/newline-after-import': 'warn',
         'comma-dangle': 'warn',
         'padded-blocks': 'warn',
+        'no-param-reassign': 'warn',
       },
       overrides: [
         {
