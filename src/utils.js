@@ -343,6 +343,7 @@ module.exports = {
         '@typescript-eslint/ban-types': 'warn',
         'semi-spacing': 'warn',
         'import/newline-after-import': 'warn',
+        'comma-dangle': 'warn',
       },
       overrides: [
         {
