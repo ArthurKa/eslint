@@ -348,6 +348,7 @@ module.exports = {
         'no-param-reassign': 'warn',
         'react/prop-types': 'off',
         'react/jsx-indent': 'warn',
+        'react/no-array-index-key': 'off',
       },
       overrides: [
         {
