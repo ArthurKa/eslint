@@ -356,6 +356,7 @@ module.exports = {
         'prefer-rest-params': 'warn',
         'arrow-spacing': 'warn',
         'import/no-mutable-exports': 'warn',
+        'import/order': 'warn',
       },
       overrides: [
         {
