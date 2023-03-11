@@ -358,6 +358,7 @@ module.exports = {
         'import/no-mutable-exports': 'warn',
         'import/order': 'warn',
         'react/function-component-definition': 'off',
+        'quote-props': 'warn',
       },
       overrides: [
         {
