@@ -353,6 +353,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'warn',
         eqeqeq: 'warn',
+        'prefer-rest-params': 'warn',
       },
       overrides: [
         {
