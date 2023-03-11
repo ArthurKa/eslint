@@ -355,6 +355,7 @@ module.exports = {
         eqeqeq: 'warn',
         'prefer-rest-params': 'warn',
         'arrow-spacing': 'warn',
+        'import/no-mutable-exports': 'warn',
       },
       overrides: [
         {
