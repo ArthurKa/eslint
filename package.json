@@ -1,6 +1,6 @@
 {
   "name": "@arthurka/eslint",
-  "version": "3.10.0",
+  "version": "3.11.0",
   "main": "./src/index.js",
   "scripts": {
     "pu": "git bcm && npm pu && git p && git pt"
