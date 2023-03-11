@@ -29,7 +29,7 @@ const allDependencies = {
   ...parentPkg.dependencies,
 };
 
-/** @typedef { import('eslint').Linter.Config } Config */
+/** @typedef {import('eslint').Linter.Config} Config */
 
 module.exports = {
   allDependencies,
@@ -352,7 +352,7 @@ module.exports = {
         // 'react/jsx-indent': 'warn',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'warn',
-        'eqeqeq': 'warn',
+        eqeqeq: 'warn',
       },
       overrides: [
         {
