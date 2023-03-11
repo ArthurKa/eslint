@@ -354,6 +354,7 @@ module.exports = {
         'arrow-body-style': 'warn',
         eqeqeq: 'warn',
         'prefer-rest-params': 'warn',
+        'arrow-spacing': 'warn',
       },
       overrides: [
         {
