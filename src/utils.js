@@ -357,6 +357,7 @@ module.exports = {
         'arrow-spacing': 'warn',
         'import/no-mutable-exports': 'warn',
         'import/order': 'warn',
+        'react/function-component-definition': 'off',
       },
       overrides: [
         {
