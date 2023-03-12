@@ -359,6 +359,7 @@ module.exports = {
         'import/order': 'warn',
         'react/function-component-definition': 'off',
         'quote-props': 'warn',
+        'space-unary-ops': 'warn',
       },
       overrides: [
         {
