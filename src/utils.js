@@ -373,6 +373,7 @@ module.exports = {
         'no-unused-expressions': 'warn',
         '@typescript-eslint/no-var-requires': 'warn',
         'no-return-assign': 'warn',
+        'no-useless-return': 'warn',
       },
       overrides: [
         {
