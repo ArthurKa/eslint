@@ -375,6 +375,7 @@ module.exports = {
         'no-return-assign': 'warn',
         'no-useless-return': 'warn',
         'no-else-return': 'warn',
+        'prefer-object-spread': 'warn',
       },
       overrides: [
         {
