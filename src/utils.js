@@ -369,6 +369,7 @@ module.exports = {
         'no-lone-blocks': 'warn',
         quotes: 'warn',
         'no-template-curly-in-string': 'warn',
+        'class-methods-use-this': 'warn',
       },
       overrides: [
         {
