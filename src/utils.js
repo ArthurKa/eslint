@@ -366,6 +366,7 @@ module.exports = {
         'no-lonely-if': 'warn',
         'no-new': 'warn',
         'no-whitespace-before-property': 'warn',
+        'no-lone-blocks': 'warn',
       },
       overrides: [
         {
