@@ -362,6 +362,7 @@ module.exports = {
         'quote-props': 'warn',
         'space-unary-ops': 'warn',
         'no-async-promise-executor': 'warn',
+        'no-promise-executor-return': 'warn',
       },
       overrides: [
         {
