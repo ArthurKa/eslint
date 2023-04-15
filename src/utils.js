@@ -361,6 +361,7 @@ module.exports = {
         'react/function-component-definition': 'off',
         'quote-props': 'warn',
         'space-unary-ops': 'warn',
+        'no-async-promise-executor': 'warn',
       },
       overrides: [
         {
