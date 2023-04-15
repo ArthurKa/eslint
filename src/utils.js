@@ -367,6 +367,7 @@ module.exports = {
         'no-new': 'warn',
         'no-whitespace-before-property': 'warn',
         'no-lone-blocks': 'warn',
+        quotes: 'warn',
       },
       overrides: [
         {
