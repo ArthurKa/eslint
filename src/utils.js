@@ -370,6 +370,7 @@ module.exports = {
         quotes: 'warn',
         'no-template-curly-in-string': 'warn',
         'class-methods-use-this': 'warn',
+        'no-unused-expressions': 'warn',
       },
       overrides: [
         {
