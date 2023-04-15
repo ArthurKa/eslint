@@ -363,6 +363,7 @@ module.exports = {
         'space-unary-ops': 'warn',
         'no-async-promise-executor': 'warn',
         'no-promise-executor-return': 'warn',
+        'no-lonely-if': 'warn',
       },
       overrides: [
         {
