@@ -364,6 +364,7 @@ module.exports = {
         'no-async-promise-executor': 'warn',
         'no-promise-executor-return': 'warn',
         'no-lonely-if': 'warn',
+        'no-new': 'warn',
       },
       overrides: [
         {
