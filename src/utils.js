@@ -365,6 +365,7 @@ module.exports = {
         'no-promise-executor-return': 'warn',
         'no-lonely-if': 'warn',
         'no-new': 'warn',
+        'no-whitespace-before-property': 'warn',
       },
       overrides: [
         {
