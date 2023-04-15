@@ -374,6 +374,7 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 'warn',
         'no-return-assign': 'warn',
         'no-useless-return': 'warn',
+        'no-else-return': 'warn',
       },
       overrides: [
         {
