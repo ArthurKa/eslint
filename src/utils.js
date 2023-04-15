@@ -368,6 +368,7 @@ module.exports = {
         'no-whitespace-before-property': 'warn',
         'no-lone-blocks': 'warn',
         quotes: 'warn',
+        'no-template-curly-in-string': 'warn',
       },
       overrides: [
         {
