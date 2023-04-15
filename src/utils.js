@@ -371,6 +371,7 @@ module.exports = {
         'no-template-curly-in-string': 'warn',
         'class-methods-use-this': 'warn',
         'no-unused-expressions': 'warn',
+        '@typescript-eslint/no-var-requires': 'warn',
       },
       overrides: [
         {
