@@ -372,6 +372,7 @@ module.exports = {
         'class-methods-use-this': 'warn',
         'no-unused-expressions': 'warn',
         '@typescript-eslint/no-var-requires': 'warn',
+        'no-return-assign': 'warn',
       },
       overrides: [
         {
