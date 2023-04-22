@@ -376,6 +376,7 @@ module.exports = {
         'no-useless-return': 'warn',
         'no-else-return': 'warn',
         'prefer-object-spread': 'warn',
+        'no-sparse-arrays': 'warn',
       },
       overrides: [
         {
