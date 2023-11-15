@@ -1,8 +1,7 @@
 // @ts-check
 'use strict';
 
-/** @type { import('eslint').Linter.Config } */
-module.exports = {
+module.exports = ((/** @type {import('eslint').Linter.Config} */ e) => e)({
   extends: '.',
   // extends: './node_modules/@arthurka/eslint',
-};
+});
