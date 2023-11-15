@@ -224,8 +224,9 @@ module.exports = {
         }],
         'newline-per-chained-call': 'off',
         'consistent-return': 'off',
-        'function-paren-newline': 'off',
+        'function-paren-newline': 'warn',
         'generator-star-spacing': ['warn', 'before'],
+        'function-call-argument-newline': 'off',
         'prefer-destructuring': 'off',
         'jsx-quotes': ['warn', 'prefer-single'],
         'react/jsx-props-no-spreading': 'off',
@@ -377,6 +378,10 @@ module.exports = {
         'no-else-return': 'warn',
         'prefer-object-spread': 'warn',
         'no-sparse-arrays': 'warn',
+        'no-debugger': 'warn',
+        'operator-assignment': 'warn',
+        'no-extra-boolean-cast': 'warn',
+        'no-cond-assign': 'warn',
       },
       overrides: [
         {
