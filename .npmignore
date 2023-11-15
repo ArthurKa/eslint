@@ -1,3 +1,9 @@
-!src
-!forceConfig
+# This is not working for NPM for some reason. Only package.json gets in registry
+# *
+# !src
+# !forceConfig
+# src/**/*.ts
+
+.vscode
+.eslintrc.js
 src/**/*.ts
