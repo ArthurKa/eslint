@@ -1,4 +1,4 @@
 *
-!./src/**
-!./forceConfig/**
-./src/*.ts
+!src
+!forceConfig
+src/**/*.ts
